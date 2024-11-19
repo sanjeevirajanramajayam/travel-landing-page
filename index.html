@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Travels - Where Dreams are Made!</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html" class="logo">Royal Travels</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BOOK VACATION</a></li>
+                    <li><a href="">DREAM VACATIONS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>World's Biggest Travel Site</h1>
+            <p>"Discover the world like never before with our handpicked destinations, tailored to satisfy every type of traveler. Whether you're seeking a tropical escape, a cultural adventure, or a scenic retreat, our travel guides offer insider tips, must-see landmarks, and local experiences to help you explore with ease."</p>
+            <a class="hero-btn" href="">Click To Know More!</a>
+        </div>
+    </section>
+
+    <section class="courses">
+        <h1>Vacations We Offer</h1>
+        <p>
+            Whether you're seeking a serene beach retreat, an adventurous mountain getaway, or a cultural city escape, we have the perfect vacation package for you. Our handpicked destinations and exclusive deals ensure that your next getaway will be nothing short of unforgettable.
+        </p>
+        <div class="row">
+            <div class="class-col">
+                <h3>Dubai</h3>
+                <p>Discover the dazzling city of Dubai, where modern marvels meet rich traditions. Whether you're looking for luxury, adventure, or cultural experiences, Dubai has something for every traveler. From soaring skyscrapers to pristine beaches, world-class shopping to thrilling desert safaris, Dubai promises an unforgettable experience.</p>
+            </div>
+            <div class="class-col">
+                <h3>Thailand</h3>
+                <p>Thailand is a captivating destination, where tropical beaches, lush jungles, ancient temples, and vibrant cities blend together to create an unforgettable experience. Whether you’re seeking relaxation on an island, an adventure in the mountains, or a dive into the bustling city life, Thailand has it all!
+
+                </p>
+            </div>
+            <div class="class-col">
+                <h3>Easter Island</h3>
+                <p>Easter Island (Rapa Nui) is one of the world’s most intriguing and remote destinations, home to ancient statues and a rich Polynesian heritage. Explore the mysteries of the island, surrounded by dramatic landscapes and fascinating history.                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="campus">
+        <h1>Our Dream Vacations</h1>
+        <p>At your Dream Vacation, we believe your perfect getaway should be as unique and extraordinary as you are.</p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="image1.jpg">
+                <div class="layer">
+                    <h3>DUBAI</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="image3.jpg">
+                <div class="layer">
+                    <h3>EASTER ISLAND</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images2.jpg">
+                <div class="layer">
+                    <h3>THAILAND</h3>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="testimonials">
+        <h1>What Our Clients Say</h1>
+        <p>Here’s what our happy travelers have to say about their experiences with us:</p>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="https://placehold.jp/150x150.png">
+                <div>
+                    <p>"A friend recommended this site to me, and I couldn’t be happier. The itinerary suggestions were spot-on, and the customer service was excellent. I felt supported every step of the way. Will definitely use them again!"
+
+                    </p>
+                    <h3>David Iyer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="https://placehold.jp/150x150.png">
+                <div>
+                    <p>"I love how personalized the recommendations are. It feels like they truly care about helping you find the best travel experiences. My trip to Italy was a dream come true thanks to them!"</p>
+                    <h3>Lauren Hope</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Join us as we bring you closer to your next adventure!</p>
+        <div class="icons">
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-snapchat"></i>
+        </div>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
